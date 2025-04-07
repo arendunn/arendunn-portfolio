@@ -10,7 +10,9 @@ links.forEach(link => {
 
     // If on GitHub Pages and the link is not a full URL (doesn't start with http:// or https://)
     if (isGitHubPages && !href.startsWith('http') && !href.startsWith('//')) {
-        // If the link is a relative path, add '/arendunn-portfolio/' to it
-        link.href = '/arendunn-portfolio/' + href;
+        // If the link is a relative path (e.g., projects.html), add '/arendunn-portfolio/' to it
+        if (!href.startsWith('/')) {
+            link.href = '/arendunn-portfolio/' + href;
+        }
     }
 });
