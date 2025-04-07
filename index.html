@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="styles.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Aren Dunn</title>
+        <script>
+            const isGitHubPages = window.location.hostname === 'arendunn.github.io';
+        
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                if (isGitHubPages && !link.href.startsWith('http')) {
+                    link.href = '/arendunn-portfolio/' + link.getAttribute('href');
+                }
+            });
+        </script>
     </head>
     <body>
         <header class="flex justify-between">
