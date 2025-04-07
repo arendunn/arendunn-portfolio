@@ -1,9 +1,16 @@
-// Adds repo to url if running on GitHub Pages
+// Check if we are on GitHub Pages
 const isGitHubPages = window.location.hostname === 'arendunn.github.io';
 
+// Select all anchor tags in the page
 const links = document.querySelectorAll('a');
+
+// Loop through each link and adjust the href if on GitHub Pages
 links.forEach(link => {
-    if (isGitHubPages && !link.href.startsWith('http')) {
-        link.href = '/arendunn-portfolio/' + link.getAttribute('href');
+    const href = link.getAttribute('href');
+
+    // If on GitHub Pages and the link is not a full URL (doesn't start with http:// or https://)
+    if (isGitHubPages && !href.startsWith('http') && !href.startsWith('//')) {
+        // If the link is a relative path, add '/arendunn-portfolio/' to it
+        link.href = '/arendunn-portfolio/' + href;
     }
 });
