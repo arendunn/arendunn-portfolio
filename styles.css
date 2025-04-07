@@ -1,0 +1,74 @@
+:root {
+    --color1: #212A31;
+    --color2: #2E3944;
+    --color3: #124E66;
+    --color4: #748D92;
+    --color5: #D3D9D4;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color4);
+}
+
+header {
+    color: var(--color5);
+    align-items: center;
+    margin: 2%;
+}
+
+a, li {
+    transition: color 0.2s;
+}
+
+a:hover, li:hover {
+    color: white;
+}
+
+li {
+    margin-left: 2em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    text-align: center;
+    color: var(--color1);
+    padding: 80px 10%;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.hero h2 {
+    padding-bottom: 20px;
+}
+
+.hero h3 {
+    padding-bottom: 40px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--color5);
+    color: var(--color1);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.hero button:hover {
+    background-color: var(--color3);
+    color: var(--color5);
+}
