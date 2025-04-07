@@ -10,6 +10,19 @@ html, body {
     width: 100%;
     min-height: 100vh;
     background-color: var(--color4);
+    overflow-x: hidden;
+}
+
+/* stack nav on smaller screens */
+@media (max-width: 428px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 1em 0; /* Add some space between items */
+    }
 }
 
 /*      NAV BAR     */
@@ -17,6 +30,7 @@ header {
     color: var(--color5);
     align-items: center;
     margin: 2%;
+    box-sizing: border-box;
 }
 
 a, li {
@@ -85,5 +99,5 @@ li {
 /*      MY WORK     */
 .mywork {
     color: var(--color1);
-    padding: 80px 10%;
+    padding: 5% 20%;
 }
