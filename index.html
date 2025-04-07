@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
         <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"/>
         <link rel="stylesheet" href="styles.css"/>
-        <script src="scripts.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Aren Dunn</title>
     </head>
@@ -21,12 +20,26 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </nav>
+
         </header>
         <section class="hero">
             <h1 class="text-7xl font-bold">Aren Dunn.</h1>
             <h2 class="text-4xl">Full-Stack Developer from Sydney, Australia.</h2>
             <h3 class="text-2xl">High-Quality Websites. Intelligent Solutions. Powerful Software.</h3>
-            <button>View My Work</button>
+            <button onclick="scrollToMyWork()">View My Work</button>
         </section>
+
+        <script>
+            function scrollToMyWork() {
+                document.getElementById('mywork').scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+
+        <section class="mywork">
+            <h2 class="text-4xl font-bold">My Work</h2>
+            <p>Here you will find all of my recent projects and work samples.</p>
+        </section>
+
+        <script src="scripts.js"></script>
     </body>
 </html>
