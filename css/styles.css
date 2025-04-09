@@ -1,0 +1,51 @@
+:root {
+    --color1: #212A31;
+    --color2: #2E3944;
+    --color3: #124E66;
+    --color4: #748D92;
+    --color5: #D3D9D4;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color4);
+    overflow-x: hidden;
+}
+
+/*Stack Nav Bar on Smaller Screens*/
+@media (max-width: 428px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 1em 0; /* Add some space between items */
+    }
+}
+
+/*Nav Bar*/
+header {
+    color: var(--color5);
+    align-items: center;
+    margin: 2%;
+    box-sizing: border-box;
+}
+
+a, li {
+    transition: color 0.2s;
+}
+
+.current {
+    color: var(--color2);
+    transition: color 0.4s;
+}
+
+a:hover, li:hover {
+    color: white;
+}
+
+li {
+    margin-left: 2em;
+}
