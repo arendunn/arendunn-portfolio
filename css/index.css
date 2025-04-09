@@ -1,4 +1,4 @@
-/*Hero Animation*/
+/* Hero Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -10,7 +10,7 @@
     }
 }
 
-/*Hero Section*/
+/* Hero Section */
 .hero {
     text-align: center;
     color: var(--color1);
@@ -46,20 +46,20 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/*My Work Section*/
-.mywork h2 {
+/* Projects Section */
+.projects h2 {
     color: var(--color1);
     padding: 30px 20%;
 }
 
-.mywork-grid {
+.projects-grid {
     padding: 0% 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.mywork-card {
+.projects-card {
     background-color: var(--color5);
     padding: 20px;
     border-radius: 10px;
@@ -67,12 +67,12 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.mywork-card:hover {
-    transform: scale(1.03);
+.projects-card:hover {
+    transform: scale(1.02);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.mywork-card-footer {
+.projects-card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,13 +80,14 @@
     margin-top: 10px;
 }
 
-.mywork-card-footer i {
+.projects-card-footer i {
     font-size: larger;
     padding-right: 5px;
 }
 
+/* Single Grid Column for Smaller Screens */
 @media (max-width: 768px) {
-    .mywork-grid {
+    .projects-grid {
         grid-template-columns: 1fr;
     }
 }

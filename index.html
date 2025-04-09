@@ -2,12 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Aren Dunn</title>
         <link rel="icon" href="assets/favicon/favicon.ico" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
         <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"/>
-        <link rel="stylesheet" href="styles.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Aren Dunn</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
     </head>
     <body>
         <header class="flex justify-between">
@@ -26,18 +27,79 @@
             <h1 class="text-7xl font-bold">Aren Dunn.</h1>
             <h2 class="text-4xl">Full-Stack Developer from Sydney, Australia.</h2>
             <h3 class="text-2xl">High-Quality Websites. Intelligent Solutions. Powerful Software.</h3>
-            <button onclick="scrollToMyWork()">View My Work</button>
+            <button onclick="scrollToProjects()">View My Projects</button>
         </section>
 
         <script>
-            function scrollToMyWork() {
-                document.getElementsByClassName('mywork')[0].scrollIntoView({ behavior: 'smooth' });
+            function scrollToProjects() {
+                document.getElementsByClassName('projects')[0].scrollIntoView({ behavior: 'smooth' });
             }
         </script>
 
-        <section class="mywork">
-            <h2 class="text-4xl font-bold">My Work</h2>
-            <p>Here you will find all of my recent projects and work samples.</p>
+        <section class="projects">
+            <h2 class="text-4xl font-bold">Projects</h2>
+            <div class="projects-grid">
+                <div class="projects-card">
+                    <h3 class="text-3xl">Project 1</h3>
+                    <p>TODO</p>
+                    <div class="projects-card-footer">
+                        <p>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-js"></i>
+                        </p>
+                        <a href="#">View on <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <h3 class="text-3xl">Project 1</h3>
+                    <p>TODO</p>
+                    <div class="projects-card-footer">
+                        <p>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-js"></i>
+                        </p>
+                        <a href="#">View on <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <h3 class="text-3xl">Project 1</h3>
+                    <p>TODO</p>
+                    <div class="projects-card-footer">
+                        <p>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-js"></i>
+                        </p>
+                        <a href="#">View on <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <h3 class="text-3xl">Project 1</h3>
+                    <p>TODO</p>
+                    <div class="projects-card-footer">
+                        <p>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-js"></i>
+                        </p>
+                        <a href="#">View on <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <h3 class="text-3xl">Project 1</h3>
+                    <p>TODO</p>
+                    <div class="projects-card-footer">
+                        <p>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-js"></i>
+                        </p>
+                        <a href="#">View on <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <script src="scripts.js"></script>
