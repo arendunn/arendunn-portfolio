@@ -20,6 +20,10 @@
     animation: fadeIn 2s ease-out forwards;
 }
 
+.hero h1 {
+    padding-bottom: 20px;
+}
+
 .hero h2 {
     padding-bottom: 20px;
 }

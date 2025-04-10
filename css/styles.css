@@ -14,7 +14,7 @@ html, body {
 }
 
 /*Stack Nav Bar on Smaller Screens*/
-@media (max-width: 428px) {
+@media (max-width: 360px) {
     nav {
         flex-direction: column;
         align-items: center;
@@ -47,5 +47,5 @@ a:hover, li:hover {
 }
 
 li {
-    margin-left: 2em;
+    margin-left: 15px;
 }
