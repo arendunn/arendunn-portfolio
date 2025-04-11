@@ -49,3 +49,9 @@ a:hover, li:hover {
 li {
     margin-left: 15px;
 }
+
+/*Title Padding*/
+.main h1 {
+    color: var(--color1);
+    padding: 30px 20%;
+}
