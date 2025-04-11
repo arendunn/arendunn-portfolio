@@ -14,18 +14,19 @@
 .hero {
     text-align: center;
     color: var(--color1);
-    padding: 80px 5%;
+    padding: 100px 10%;
     opacity: 0;
     height: 90vh;
     animation: fadeIn 2s ease-out forwards;
 }
 
 .hero h1 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 60px;
 }
 
 .hero h2 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .hero h3 {
