@@ -55,3 +55,14 @@ li {
     color: var(--color1);
     padding: 30px 20%;
 }
+
+/* Footer */
+footer {
+    color: var(--color5);
+    background-color: var(--color2);
+    padding: 2%;
+    margin-top: 2%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
