@@ -69,6 +69,14 @@ footer {
     gap: 10px; 
 }
 
+footer a, footer li {
+    transition: color 0.2s;
+}
+
+footer a:hover, footer li:hover {
+    color: var(--color4);
+}
+
 @media (max-width: 600px) {
     footer {
       flex-direction: column;
