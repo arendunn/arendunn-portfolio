@@ -69,12 +69,8 @@ footer {
     gap: 10px; 
 }
 
-footer a, footer li {
-    transition: color 0.2s;
-}
-
 footer a:hover, footer li:hover {
-    color: var(--color4);
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {
