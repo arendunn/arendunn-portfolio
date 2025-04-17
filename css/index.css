@@ -120,7 +120,7 @@
 }
 
 /* Single Grid Column for Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .projects-grid {
         grid-template-columns: 1fr !important;
         padding: 0 5%;
