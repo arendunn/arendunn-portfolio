@@ -60,7 +60,6 @@
 .projects-grid {
     padding: 0% 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -70,6 +69,10 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projects-card:last-of-type {
+    grid-column: 1 / 4;
 }
 
 .projects-card:hover {
@@ -93,6 +96,11 @@
 /* Single Grid Column for Smaller Screens */
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        padding: 0 5%;
+    }
+
+    .projects-card:last-of-type {
+        grid-column: 1 / -1;
     }
 }
