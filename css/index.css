@@ -71,8 +71,28 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.projects-card:last-of-type {
+.projects-card a {
+    background-color: var(--color4);
+    padding: 5px;
+}
+
+.view-more {
+    width: 100%;
+    height: 40px;
     grid-column: 1 / 4;
+    padding: 0;
+}
+
+.view-more a {
+    height: 100%;
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color5);
+}
+
+.view-more button {
+    width: 100%;
+    height: 100%;
 }
 
 .projects-card:hover {

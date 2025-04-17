@@ -33,7 +33,7 @@ header {
     box-sizing: border-box;
 }
 
-a, li {
+header a, header li {
     transition: color 0.2s;
 }
 
@@ -42,7 +42,7 @@ a, li {
     transition: color 0.4s;
 }
 
-a:hover, li:hover {
+header a:hover, header li:hover {
     color: white;
 }
 
