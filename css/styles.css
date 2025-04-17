@@ -62,7 +62,22 @@ footer {
     background-color: var(--color2);
     padding: 2%;
     margin-top: 2%;
-    box-sizing: border-box;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 10px; 
 }
+
+@media (max-width: 600px) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    .footer-nav ul {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
