@@ -33,13 +33,13 @@ header {
     box-sizing: border-box;
 }
 
-header a, header li {
-    transition: color 0.2s;
-}
-
 .current {
     color: var(--color2);
     transition: color 0.4s;
+}
+
+header a, header li {
+    transition: color 0.2s;
 }
 
 header a:hover, header li:hover {
