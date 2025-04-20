@@ -106,18 +106,17 @@
 
 .view-more {
     width: 100%;
-    height: 40px;
+    height: 50px;
     grid-column: 1 / 4;
     padding: 0;
     cursor: pointer;
 }
 
-.view-more a {
-    height: 100%;
-    display: inline-block;
-    text-decoration: none;
-    background-color: var(--color5);
+.view-more h3 {
+    padding: 10px;
+    padding-left: 20px;
 }
+
 
 /* Single Grid Column for Smaller Screens */
 @media (max-width: 968px) {
