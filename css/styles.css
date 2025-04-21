@@ -69,8 +69,15 @@ footer {
     gap: 10px; 
 }
 
-footer a:hover, footer li:hover {
+footer a:hover, footer li:hover, .footer-socials a:hover {
     text-decoration: underline;
+    color: var(--color4);
+}
+
+.footer-socials {
+    display: flex;
+    font-size: 20px;
+    gap: 10px;
 }
 
 @media (max-width: 600px) {
