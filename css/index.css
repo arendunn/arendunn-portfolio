@@ -29,13 +29,10 @@
     padding-bottom: 10px;
 }
 
-.hero h3 {
-    padding-bottom: 10px;
-}
-
 .hero-socials {
     font-size: 30px;
     display: block;
+    padding-top: 10px;
     padding-bottom: 40px;
 }
 
