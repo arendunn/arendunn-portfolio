@@ -39,6 +39,14 @@
     padding-bottom: 40px;
 }
 
+.hero-socials a {
+    transition: color 0.2s ease-in-out;
+}
+
+.hero-socials a:hover {
+    color: var(--color3);
+}
+
 .hero button {
     padding: 10px 20px;
     font-size: 1.1rem;
@@ -47,7 +55,7 @@
     cursor: pointer;
     background-color: var(--color5);
     color: var(--color1);
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
