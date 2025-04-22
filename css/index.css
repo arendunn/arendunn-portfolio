@@ -114,7 +114,6 @@
     padding-right: 5px;
 }
 
-
 .view-more {
     width: 100%;
     height: 50px;
@@ -157,16 +156,34 @@
 .contact form {
     background-color: var(--color5);
     display: flex;
-    align-items: end;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
-    padding-right: 40%;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact .form-group {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+}
+
+.contact .form-group-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact button {
+    background-color: var(--color4);
+    padding: 7px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+}
+
+.contact button:hover {
+    background-color: var(--color3);
+    color: var(--color5);
 }
