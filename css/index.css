@@ -137,6 +137,10 @@
     .projects-card:last-of-type {
         grid-column: 1 / -1;
     }
+
+    .contact {
+        padding: 0% 10% !important;
+    }
 }
 
 /* Contact Section */
@@ -144,4 +148,25 @@
     color: var(--color1);
     padding: 30px 20%;
     padding-top: 100px;
+}
+
+.contact  {
+    padding: 0% 30%;
+}
+
+.contact form {
+    background-color: var(--color5);
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-right: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-group {
+    display: flex;
+    gap: 30px;
 }
