@@ -101,6 +101,14 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+.projects-card p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
 .projects-card-footer {
     display: flex;
     justify-content: space-between;
@@ -112,6 +120,10 @@
 .projects-card-footer i {
     font-size: larger;
     padding-right: 5px;
+}
+
+.projects-card-footer .icon {
+    height: 20px
 }
 
 .view-more {
@@ -142,6 +154,7 @@
     }
 }
 
+
 /* Contact Section */
 .contact h2 {
     color: var(--color1);
@@ -163,6 +176,21 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    color: var(--color1);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact form input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 .contact .form-group {
