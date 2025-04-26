@@ -118,12 +118,16 @@
 }
 
 .projects-card-footer i {
-    font-size: larger;
+    font-size: 30px;
     padding-right: 5px;
 }
 
+.projects-card-footer .fa-github {
+    font-size: 20px;
+}
+
 .projects-card-footer .icon {
-    height: 20px
+    height: 30px
 }
 
 .view-more {
