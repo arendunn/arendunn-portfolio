@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Hammersmith One
+- Font Title: Istok Web
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/hammersmithone/v17/qWcyB624q4L_C4jGQ9IK0O_dFlnbshsks4MRXw.ttf
+- Font Source: https://fonts.gstatic.com/s/istokweb/v24/3qTqojGmgSyUukBzKslhvU5a_mkUYBfcMw.ttf
 - Font License: undefined)
