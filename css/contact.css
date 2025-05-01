@@ -21,6 +21,7 @@
 .hero {
     color: var(--color1);
     opacity: 0;
+    height: 100vh;
     animation: fadeIn 2s ease-out forwards;
 }
 
