@@ -103,7 +103,6 @@
 
 .projects-card p {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -144,7 +143,7 @@
     padding-left: 20px;
 }
 
-/* Single Grid Column for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 968px) {
     .projects-grid {
         grid-template-columns: 1fr !important;
@@ -159,6 +158,11 @@
     }
 }
 
+@media (max-width: 768px) {
+    .projects-card p {
+        flex-wrap: wrap;
+    }
+}
 
 /* Contact Section */
 .contact h2 {
