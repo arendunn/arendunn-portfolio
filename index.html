@@ -33,6 +33,7 @@
             </nav>
         </header>
 
+        <!-- Hero Section -->
         <section class="hero">
             <h1 class="font-bold">Aren Dunn</h1>
             <h2 class="text-3xl">Full-Stack Developer from Sydney, Australia.</h2>
@@ -45,12 +46,14 @@
             <button onclick="scrollToProjects()">View My Projects</button>
         </section>
 
+        <!-- JavaScript for CTA button -->
         <script>
             function scrollToProjects() {
                 document.getElementsByClassName('projects')[0].scrollIntoView({ behavior: 'smooth' });
             }
         </script>
 
+        <!-- Projects Section -->
         <section class="projects">
             <h2 class="text-4xl font-bold">Projects</h2>
             <div class="projects-grid">
@@ -77,7 +80,7 @@
                     <span class="projects-card-header">
                         <img src="assets/stackr.png" alt="Stackr" class="icon" />
                     </span>
-                    <p>Stackr is a fully functional Kanban-styled to do list application. This app utilites mainly basic HTML, CSS and JavaScript.</p>
+                    <p>Stackr is a fully functional Kanban-styled to do list application. This app utilites only basic HTML, CSS and JavaScript.</p>
                     <div class="projects-card-footer">
                         <p>
                             <i class="fab fa-html5"></i>
@@ -93,6 +96,7 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section class="contact">
             <h2 class="text-4xl font-bold">Contact</h2>
             <form action="https://formspree.io/f/xwpoegpr" method="POST">
@@ -110,6 +114,7 @@
             </form>
         </section>
 
+        <!-- JavaScript for URL correction -->
         <script src="scripts.js"></script>
     </body>
     <footer>
