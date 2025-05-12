@@ -72,11 +72,16 @@
 .projects-grid {
     padding: 0% 10%;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .projects-card {
     background-color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -101,6 +106,9 @@
 }
 
 .projects-card a {
+    margin-top: 10px;
+    width: 30%;
+    text-align: center;
     background-color: var(--color4);
     padding: 7px;
     border-radius: 5px;
@@ -125,18 +133,12 @@
 
 .projects-card-footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     margin-top: 10px;
-}
-
-.projects-card-footer p {
-    max-width: 63%;
 }
 
 .projects-card-footer i {
     font-size: 30px;
-    padding-right: 5px;
 }
 
 .projects-card-footer .fa-github {
@@ -145,6 +147,13 @@
 
 .projects-card-footer .icon {
     height: 30px
+}
+
+.projects-card-footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
 
 .view-more {
@@ -237,11 +246,5 @@
 
     .contact {
         padding: 0% 10% !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .projects-card p {
-        flex-wrap: wrap;
     }
 }
