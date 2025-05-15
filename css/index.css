@@ -73,29 +73,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 880px) {
-    .hero > div {
-        font-size: 27px;
-    }
-    .hero-socials {
-        font-size: 50px;
-        padding-top: 10px;
-    }
-    .hero {
-        padding: 30px 10%;
-    }
-    .hero h2 {
-        font-size: 90px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .hero button, .resume-button {
-        margin-top: 20px;
-        font-size: 12px;
-    }
-}
-
 
 /* Projects Section */
 .projects h2 {
@@ -163,8 +140,8 @@
 }
 
 .projects-card p {
-    display: flex;
     gap: 10px;
+    font-size: 3vw;
 }
 
 .projects-card-footer {
@@ -340,5 +317,37 @@
 
     .contact {
         padding: 0% 10% !important;
+    }
+}
+
+@media (min-width: 880px) {
+    .hero > div {
+        font-size: 27px;
+    }
+    .hero-socials {
+        font-size: 50px;
+        padding-top: 10px;
+    }
+    .hero {
+        padding: 30px 10%;
+    }
+    .hero h2 {
+        font-size: 90px;
+    }
+    .projects-card p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero button, .resume-button {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .skill-text {
+        font-size: 15px;
+    }
+    .skills-section img {
+        height: 40px;
     }
 }
