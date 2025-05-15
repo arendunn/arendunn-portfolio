@@ -72,8 +72,8 @@
 .projects-grid {
     padding: 0% 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 20px; */
 }
 
 .projects-card {
@@ -87,6 +87,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .projects-card-header {
@@ -181,7 +182,7 @@
 
 .contact  {
     padding: 0% 30%;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
 }
 
 .contact form {
