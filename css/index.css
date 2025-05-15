@@ -12,9 +12,8 @@
 
 /* Hero Section */
 .hero {
-    display: inline-block;
     color: var(--color1);
-    padding: 60px 10%;
+    padding: 80px 10%;
     opacity: 0;
     height: 90vh;
     animation: fadeIn 2s ease-out forwards;
@@ -35,17 +34,17 @@
 }
 
 .hero h2 {
-    font-size: 10vh;
+    font-size: 8vw;
     padding-bottom: 10px;
 }
 
-.hero h3 {
-    font-size: 3vh;
-    padding-bottom: 10px;
+.hero > div {
+    font-size: 4vw;
+    padding-bottom: 20px;
 }
 
 .hero-socials {
-    font-size: 55px;
+    font-size: 7vw;
     padding-top: 10px;
 }
 
@@ -59,8 +58,8 @@
 
 .hero button, .resume-button {
     padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 1.1rem;
+    margin-top: 15px;
+    font-size: 1vw;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
@@ -76,6 +75,22 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 1200px) {
+    .hero > div {
+        font-size: 36px;
+    }
+    .hero-socials {
+        font-size: 50px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero button, .resume-button {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
 
 /* Skills Section */
 .skills-section {
