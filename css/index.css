@@ -12,6 +12,7 @@
 
 /* Hero Section */
 .hero {
+    display: inline-block;
     color: var(--color1);
     padding: 60px 10%;
     opacity: 0;
@@ -33,12 +34,13 @@
     margin-bottom: 10px;
 }
 
-.hero h1 {
-    padding: 15px 0;
-    font-size: 60px;
+.hero h2 {
+    font-size: 10vh;
+    padding-bottom: 10px;
 }
 
-.hero h2 {
+.hero h3 {
+    font-size: 3vh;
     padding-bottom: 10px;
 }
 
@@ -87,7 +89,7 @@
 }
 
 .skills-section img {
-    height: 50px;
+    height: 60px;
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
