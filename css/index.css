@@ -307,14 +307,15 @@
 
 /* Responsive Design */
 @media (max-width: 968px) {
+    .hero h2 {
+        font-size: 70px;
+    }
     .projects-grid {
         grid-template-columns: 1fr !important;
     }
-
     .projects-card:last-of-type {
         grid-column: 1 / -1;
     }
-
     .contact {
         padding: 0% 10% !important;
     }
