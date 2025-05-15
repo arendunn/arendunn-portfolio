@@ -1,62 +1,80 @@
 # ARENDUNN-PORTFOLIO
 
-Welcome to my personal portfolio repository! This project is built using HTML, CSS, and JavaScript to showcase my skills as a web developer. It highlights my web development experience, including full-stack and front-end projects.
+Welcome to my personal portfolio repository! This project is built using **HTML**, **CSS**, and **JavaScript** to showcase my skills as a web developer. It highlights my experience across front-end and full-stack projects.
 
-Features
+---
 
-- Responsive Design: The site is designed to be fully responsive, ensuring a seamless experience across devices, from mobile to desktop.
-- Interactive Navigation: The navigation bar allows easy access to different sections, including projects, services, about, and contact.
-- Smooth Page Transitions: A simple, intuitive navigation system that allows you to explore various sections of the site.
+## ✨ Features
 
-Technologies Used
+- **Responsive Design**: Seamlessly adapts to mobile, tablet, and desktop screens.
+- **Interactive Navigation**: Easy access to all sections like Projects, Services, About, and Contact.
+- **Smooth Page Transitions**: Simple, intuitive navigation throughout the site.
 
-- HTML: The structure and content of the portfolio.
-- CSS: Styling to ensure a clean, professional look and responsive design.
-- JavaScript: Adds interactivity and dynamic functionality to the site.
+---
 
-Live Demo
+## 🛠 Technologies Used
 
-You can view the live version of the portfolio hosted on GitHub Pages at:
+- **HTML** – Structure and content of the site
+- **CSS** – Visual styling and responsive design
+- **JavaScript** – Dynamic interactivity and functionality
 
-https://arendunn.github.io/arendunn-portfolio/
+---
 
-Getting Started
+## 🚀 Live Demo
 
-To view this project locally on your computer, follow these steps:
+Check out the live portfolio here:  
+🔗 [https://arendunn.github.io/arendunn-portfolio/](https://arendunn.github.io/arendunn-portfolio/)
 
-1. Clone the repository
+---
+
+## 📦 Getting Started
+
+To run this project locally:
+
+```bash
+# 1. Clone the repository
 git clone https://github.com/arendunn/arendunn-portfolio.git
 
-2. Navigate to the project directory
+# 2. Navigate to the project folder
 cd arendunn-portfolio
 
-3. Open the project in your browser
-Open the index.html file in your web browser to see the portfolio in action.
+# 3. Open in browser
+Open the `index.html` file in your browser
+```
 
-File Structure
+---
 
+## 📁 File Structure
+
+```
 arendunn-portfolio/
 │
-├── assets/                # Images, icons, and other media
-│   └── favicon/           # Favicon files
+├── assets/           # Images, icons, and other media
+│   └── favicon/      # Favicon files
 │
-├── css/                   # CSS for styling
-│   └── styles.css         # Main stylesheet
+├── css/
+│   └── styles.css    # Main stylesheet
 │
-├── index.html             # Home page
-├── projects.html          # Projects page
-├── services.html          # Services page
-├── about.html             # About page
-├── contact.html           # Contact page
-└── scripts.js             # JavaScript for interactivity
+├── index.html        # Home page
+├── projects.html     # Projects page
+├── services.html     # Services page
+├── about.html        # About page
+├── contact.html      # Contact page
+└── scripts.js        # JavaScript for interactivity
+```
 
-License
+---
 
-This project is licensed under the MIT License. See the LICENSE file for more information.
+## 📄 License
 
-Contact
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for details.
 
-You can reach me through the following channels:
+---
 
-- Email: arendunn@hotmail.com
-- LinkedIn: linkedin.com/in/aren-dunn-1b7390248
+## 📬 Contact
+
+Feel free to reach out!
+
+- **Email**: [arendunn@hotmail.com](mailto:arendunn@hotmail.com)  
+- **LinkedIn**: [linkedin.com/in/aren-dunn-1b7390248](https://linkedin.com/in/aren-dunn-1b7390248)
