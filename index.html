@@ -28,21 +28,35 @@
         <header class="flex justify-between">
             <a class="text-3xl font-bold" href="index.html" title="Home">AD.</a>
             <nav class="list-none flex font-bold">
-                <li><a href="about.html" title="About">About</a></li>
+                <li><a href="#" title="About">Projects</a></li>
                 <li><a href="contact.html" title="Contact">Contact</a></li>
             </nav>
         </header>
 
         <!-- Hero Section -->
         <section class="hero">
-            <h1 class="font-bold">Aren Dunn</h1>
-            <h2 class="text-3xl">Web Developer from Sydney, Australia.</h2>
-            <h3 class="text-1xl">Creator of High-Quality Websites, Intelligent Solutions & Powerful Software.</h3>
-            <div class="hero-socials">
-                <a href="https://github.com/arendunn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/aren-dunn-1b7390248" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <h2 class="text-8xl font-bold">Aren Dunn</h2>
+            <p class="flex flex-col text-2xl pt-5"> 
+                <span><i class="fas fa-map-marker-alt w-10 pr-20"></i> Sydney, Australia</span>
+                <span><i class="fas fa-book w-10 pr-20"></i> Bachelor of Computer Science, Software Engineering & Big Data and Artificial Intelligence</span>
+                <span><i class="fas fa-code w-10 pr-20"></i> Web Developer</span>
+              </p>
+            <h3 class="text-2xl pt-10">
+                I am an aspiring Full-Stack Developer from Sydney, Australia. Completing a Bachelor of Computer Science with 
+                two majors: Big Data and Artificial Intelligence & Software Engineering. Focus on becoming a creator of High-Quality Websites,
+                Intelligent Solutions & Powerful Software. I am the founder and CEO of <a href="#" title="ApexNet">ApexNet</a>, 
+                a web development company that I am currently building to allow me to utilise my skills in developing amazing, real-word projects.
+            </h3>
+            <div class="flex flex-col items-center pt-10">
+                <div class="hero-socials">
+                        <a href="https://github.com/arendunn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/aren-dunn-1b7390248" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="flex flex-row items-center gap-5">
+                    <button onclick="scrollToProjects()">View My Projects</button>
+                    <a href="assets/ARENDUNN_RESUME.pdf" download="ARENDUNN_RESUME" class="resume-button">Download My Resume</a>
+                </div>
             </div>
-            <button onclick="scrollToProjects()">View My Projects</button>
         </section>
 
         <!-- JavaScript for CTA button -->
@@ -143,6 +157,26 @@
             </div>
         </section>
 
+        <section class="skills-section">
+            <h2 class="text-4xl font-bold">Skills</h2>
+            <p class="text-1xl">
+                <div class="skills">
+                  <span class="skills-icon"><i class="fab fa-html5"></i>HTML</span>
+                  <span class="skills-icon"><img src="assets/html.png"/>HTML</span>
+                  <span class="skills-icon"><i class="fab fa-css3"></i>CSS</span>
+                  <span class="skills-icon"><i class="fab fa-js"></i>JavaScript</span>
+                  <span class="skills-icon"><img src="assets/mongodb.svg" alt="MongoDB" class="icon" />MongoDB</span>
+                  <span class="skills-icon"><img src="assets/express.svg" alt="Express" class="icon" />Express.js</span>
+                  <span class="skills-icon"><i class="fab fa-react"></i>React</span>
+                  <span class="skills-icon"><i class="fab fa-node"></i>Node.js</span>
+                  <span class="skills-icon"><i class="fab fa-python"></i> Python</span>
+                  <span class="skills-icon"><i class="fab fa-java"></i> Java</span>
+                  <span class="skills-icon"><img src="assets/cplusplus.svg" alt="C++" class="icon" />C++</span>
+                  <span class="skills-icon"><i><i class="fab fa-git-alt"></i> <i class="fab fa-github"></i></i> Git & GitHub</span>
+                </div>
+              </p>
+        </section>
+
         <!-- Contact Section -->
         <section class="contact">
             <h2 class="text-4xl font-bold">Contact</h2>
@@ -175,7 +209,7 @@
         </div>
         <nav class="footer-nav">
           <ul class="list-none flex font-bold">
-            <li><a href="about.html" title="About">About</a></li>
+            <li><a href="#" title="About">Projects</a></li>
             <li><a href="contact.html" title="Contact">Contact</a></li>
           </ul>
         </nav>
