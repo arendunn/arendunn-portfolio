@@ -96,61 +96,6 @@
     }
 }
 
-/* Skills Section */
-.skills-section {
-    padding-top: 150px;
-}
-
-.skills-section h2 {
-    color: var(--color1);
-    padding: 30px 20%;
-    font-size: 250%;
-}
-
-.skills-section img {
-    height: 60px;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.skills {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0% 10%;
-    margin-top: 20px;
-    gap: 20px;
-}
-
-.skills > span {
-    background-color: var(--color5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 10px;
-    gap: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.skills > span:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-@media (min-width: 900px) {
-    .skill-text {
-        display: block;
-    }
-}
 
 /* Projects Section */
 .projects h2 {
@@ -262,6 +207,64 @@
     font-size: 20px;
     font-weight: 500;
 }
+
+/* Skills Section */
+.skills-section {
+    padding-top: 150px;
+}
+
+.skills-section h2 {
+    color: var(--color1);
+    padding: 30px 20%;
+    font-size: 250%;
+}
+
+.skills-section img {
+    height: 60px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0% 10%;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.skills > span {
+    background-color: var(--color5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.skills > span:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+    .skills > span {
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+
 
 /* Contact Section */
 .contact h2 {
