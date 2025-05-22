@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Aren Dunn</title>
+
+        <!-- Primary Meta Tags -->
+        <meta name="author" content="Aren Dunn"/>
+        <meta name="title" content="Aren Dunn - Full-Stack Developer from Sydney, Australia."/>
+        <meta name="description" content="Aren Dunn - Full-Stack Developer from Sydney, Australia. Creator of High-Quality Websites, Intelligent Solutions & Powerful Software."/>
+        <meta name="keywords" content="Aren Dunn, Full-Stack Developer, Sydney, Australia, Websites, Software, Intelligent Solutions"/>
+
+        <!-- Favicon Link Tags -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../assets/favicon/site.webmanifest">  
+
+        <!-- CSS Link Tags -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"/>
+        <link rel="stylesheet" href="../css/styles.css"/>
+        <link rel="stylesheet" href="../css/index.css"/>
+    </head>
+    <body>
+        <header class="flex justify-between">
+            <a class="text-3xl font-bold" href="../home/" title="Home">AD.</a>
+            <nav class="list-none flex font-bold">
+                <li><a href="#" title="About">Projects</a></li>
+                <li><a href="../contact/" title="Contact">Contact</a></li>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2 class="text-8xl font-bold">AREN DUNN</h2>
+            <div class="grid grid-cols-[auto_1fr] items-center gap-2 text-2xl pt-10"> 
+                <i class="row-start-1  fas fa-map-marker-alt w-10 "></i>
+                <span class="row-start-1 col-start-2">Sydney, Australia</span>
+                <i class="row-start-2  fas fa-book w-10"></i>
+                <span class="row-start-2 col-start-2 leading-tight">Bachelor of Computer Science, Software Engineering and Big Data and Artificial Intelligence</span>
+                <i class="row-start-3  fas fa-code w-10"></i>
+                <span class="row-start-3 col-start-2 leading-tight">Web Developer, exploring Full-Stack Development and Data Science</span>
+                <i class="row-start-4  fas fa-laptop w-10"></i>
+                <span class="row-start-4 col-start-2 leading-tight">Creator of High-Quality Websites, Intelligent Solutions & Powerful Software</span>
+                <i class="row-start-5  fas fa-line-chart w-10"></i>
+                <span class="row-start-5 col-start-2 leading-tight">Building <a href="https://instagram.com/apexnet.au/" title="ApexNet" target="_blank">ApexNet</a>, a Web Services & Digital Development Business</span>
+            </div>
+            <!--
+            <h3 class="text-2xl pt-10">
+                I am an aspiring Full-Stack Developer from Sydney, Australia. Completing a Bachelor of Computer Science with 
+                two majors: Big Data and Artificial Intelligence & Software Engineering. Focus on becoming a creator of High-Quality Websites,
+                Intelligent Solutions & Powerful Software. I am the founder and CEO of <a href="#" title="ApexNet">ApexNet</a>, 
+                a web development company that I am currently building to allow me to utilise my skills in developing amazing, real-word projects.
+            </h3>
+            -->
+            <div class="flex flex-col items-center pt-10">
+                <div class="hero-socials">
+                        <a href="https://github.com/arendunn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/aren-dunn-1b7390248" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="flex flex-row items-center gap-2">
+                    <button onclick="scrollToProjects()">View My Projects</button>
+                    <a href="assets/ARENDUNN_RESUME.pdf" download="ARENDUNN_RESUME" class="resume-button">Download My Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript for CTA button -->
+        <script>
+            function scrollToProjects() {
+                document.getElementsByClassName('projects')[0].scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2 class="text-4xl font-bold">Projects</h2>
+            <div class="projects-grid">
+                <div class="projects-card">
+                    <div>
+                        <span class="projects-card-header">
+                            <img src="../assets/quantro.png" alt="Quantro" class="icon" />
+                        </span>
+                        <p>
+                            Quantro is a lightweight, interactive web app that helps users set and 
+                            track savings goals—whether it's buying a car, planning a holiday, or building 
+                            an emergency fund.
+                        </p>
+                        <p class="pt-3">
+                            Built entirely with React, Quantro prioritizes simplicity, 
+                            speed, and privacy by storing all data locally in the browser. No sign-up or 
+                            backend required.
+                        </p>
+                        <p class="pt-3">
+                            Currently, the app uses <span class="font-mono inline p-0 m-0">localStorage</span> to manage data. However, 
+                            future plans include transitioning Quantro into a full-stack application 
+                            with user accounts, authentication, and external database support—enabling 
+                            seamless access across multiple devices.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="projects-card-footer flex gap-4">
+                            <i class="fab fa-html5" title="HTML"></i>
+                            <i class="fab fa-css3" title="CSS"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-react" title="React"></i>
+                            <img src="../assets/tailwindcss.svg" title="TailwindCSS" alt="TailwindCSS" class="icon" />
+                            <img src="../assets/vite.svg" title="Vite" alt="Vite" class="icon" />
+                        </div>
+                        <p class="projects-card-footer-link">
+                            <a href="../https://github.com/arendunn/quantro" title="View on GitHub" target="_blank">View on <i class="fab fa-github"></i></a>
+                            <a href="../https://arendunn.github.io/quantro" title="Live Demo" target="_blank">Live Demo</i></a>   
+                        </p>
+                    </div>
+                </div>
+                <!--
+                <div class="projects-card">
+                    <div>
+                        <span class="projects-card-header">
+                            <img src="assets/elevate.png" alt="Elevate" class="icon" />
+                        </span>
+                        <p>
+                            Elevate is a Full-Stack Habit Tracking App using the MERN stack. The App also utilises Axios for sending HTTP requests between React and Express.
+                            This app is still in development, with many features to be added in the future. The app is designed to be a simple and easy way to track your habits and goals.
+                        </p>
+                        </div>
+                    <div>
+                        <div class="projects-card-footer">
+                            <p>
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3"></i>
+                                <i class="fab fa-js"></i>
+                                <img src="assets/tailwindcss.svg" alt="TailwindCSS" class="icon" />
+                                <img src="assets/mongodb.svg" alt="MongoDB" class="icon" />
+                                <img src="assets/express.svg" alt="Express" class="icon" />
+                                <i class="fab fa-react"></i>
+                                <i class="fab fa-node"></i>
+                            </p>
+                        </div>
+                        <div class="projects-card-footer-link">
+                            <a href="https://github.com/arendunn/habit-tracker-frontend" title="View on GitHub" target="_blank">View on <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <div>
+                        <span class="projects-card-header">
+                            <img src="assets/stackr.png" alt="Stackr" class="icon" />
+                        </span>
+                        <p>
+                            Stackr is a fully functional Kanban-styled to do list application. This app utilites only basic HTML, CSS and JavaScript. This app is still under
+                            development.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="projects-card-footer">
+                            <p>
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3"></i>
+                                <i class="fab fa-js"></i>
+                            </p>
+                        </div>
+                        <div class="projects-card-footer-link">
+                            <a href="https://github.com/arendunn/stackr-kanban-board-app" title="View on GitHub" target="_blank">View on <i class="fab fa-github"></i></a>                        
+                        </div>
+                    </div>
+                </div>-->
+                <div class="projects-card view-more">
+                    <h3>More Projects Coming Soon...</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="text-4xl font-bold">Skills</h2>
+            <p class="text-1xl">
+                <div class="skills">
+                    <span><img src="../assets/html.png"><span class="skill-text">HTML</span></span>
+                    <span><img src="../assets/css.png"><span class="skill-text">CSS</span></span>
+                    <span><img src="../assets/javascript.png"><span class="skill-text">JavaScript</span></span>
+                    <span><img src="../assets/react.png"><span class="skill-text">React</span></span>
+                    <span><img src="../assets/tailwindcss.png"><span class="skill-text">TailwindCSS</span></span>
+                    <span><img src="../assets/node.png"><span class="skill-text">Node.js</span></span>
+                    <span><img src="../assets/express.svg"><span class="skill-text">Express.js</span></span>
+                    <span><img src="../assets/mongodb.png"><span class="skill-text">MongoDB</span></span>
+                    <span><img src="../assets/springboot.png"><span class="skill-text">Spring Boot</span></span>
+                    <span><img src="../assets/python.png"><span class="skill-text">Python</span></span>
+                    <span><img src="../assets/java.png"><span class="skill-text">Java</span></span>
+                    <span><img src="../assets/cplusplus.png"><span class="skill-text">C++</span></span>
+                    <span><img src="../assets/sql.png"><span class="skill-text">SQL</span></span>
+                    <span><img src="../assets/git.png"><span class="skill-text">Git</span></span>
+                    <span><img src="../assets/github.png"><span class="skill-text">GitHub</span></span>
+                    <span><img src="../assets/figma.png"><span class="skill-text">Figma</span></span>
+                    <span><img src="../assets/vite.png"><span class="skill-text">Vite</span></span>
+                    <span><img src="../assets/vscode.png"><span class="skill-text">Visual Studio Code</span></span>
+                    <span><img src="../assets/codeblocks.png"><span class="skill-text">Code::Blocks</span></span>
+                    <span><img src="../assets/anaconda.png"><span class="skill-text">Anaconda</span></span>
+                    <span><img src="../assets/jupyter.png"><span class="skill-text">Jupyter Notebook</span></span>
+                </div>
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2 class="text-4xl font-bold">Contact</h2>
+            <form action="https://formspree.io/f/xwpoegpr" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                    <label for="message">Message:</label>
+                    <textarea type="message" id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group-button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- JavaScript for URL correction -->
+        <script src="../scripts.js"></script>
+    </body>
+    <footer>
+        <div class="footer-brand">
+          <a class="text-3xl font-bold" href="../home/" title="Home">AD.</a>
+          <p>© 2025 Aren Dunn</p>
+        </div>
+        <div class="footer-socials">
+            <a href="https://github.com/arendunn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/aren-dunn-1b7390248" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <nav class="footer-nav">
+          <ul class="list-none flex font-bold">
+            <li><a href="#" title="About">Projects</a></li>
+            <li><a href="../contact/" title="Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
+</html>
