@@ -28,8 +28,8 @@
         <header class="flex justify-between">
             <a class="text-3xl font-bold" href="index.html" title="Home">AD.</a>
             <nav class="list-none flex font-bold">
-                <li><a href="#" title="About">Projects</a></li>
-                <li><a href="contact.html" title="Contact">Contact</a></li>
+                <li><a href="#projects" title="About">Projects</a></li>
+                <li><a href="#contact" title="Contact">Contact</a></li>
             </nav>
         </header>
 
@@ -46,7 +46,7 @@
                 <i class="row-start-4  fas fa-laptop w-10"></i>
                 <span class="row-start-4 col-start-2 leading-tight">Creator of High-Quality Websites, Intelligent Solutions & Powerful Software</span>
                 <i class="row-start-5  fas fa-line-chart w-10"></i>
-                <span class="row-start-5 col-start-2 leading-tight">Building <a href="https://arendunn.github.io/apexnet" title="ApexNet" target="_blank">ApexNet</a>, a Web Services & Digital Development Business</span>
+                <span class="row-start-5 col-start-2 leading-tight">Building <a href="https://apexnet.netlify.app" title="ApexNet" target="_blank">ApexNet</a>, a Web Services & Digital Development Business</span>
             </div>
             <!--
             <h3 class="text-2xl pt-10">
@@ -76,7 +76,7 @@
         </script>
 
         <!-- Projects Section -->
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2 class="text-4xl font-bold">Projects</h2>
             <div class="projects-grid">
                 <div class="projects-card">
@@ -109,7 +109,34 @@
                         </div>
                         <p class="projects-card-footer-link">
                             <a href="https://github.com/arendunn/apexnet" title="View on GitHub" target="_blank">View on <i class="fab fa-github"></i></a>       
-                            <a href="https://arendunn.github.io/apexnet" title="Live Demo" target="_blank">Live Demo</i></a>                    
+                            <a href="https://apexnet.netlify.app" title="Live Demo" target="_blank">Live Demo</i></a>                    
+                        </p>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <div>
+                        <span class="projects-card-header">
+                            <h1 class="text-2xl font-bold">PlanIT - Local Event Planner and Finder</h1>
+                        </span>
+                        <p>
+                            This project was completed alongside a team as a final year university application. I assisted in frontend 
+                            development and overall documentation for the application.
+                        </p>
+                        <p class="pt-3">
+                            PlanIt is a modern web application that allows users to create, explore, and manage local events.
+                            The application consists of a React frontend hosted on <b>AWS Amplify</b>, and a serverless backend 
+                            powered by <b>AWS Lambda</b>, <b>API Gateway</b>, <b>DynamoDB</b>, and <b>AWS Cognito</b> for authentication.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="projects-card-footer flex gap-4">
+                            <i class="fab fa-html5" title="HTML"></i>
+                            <i class="fab fa-css3" title="CSS"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-react" title="React"></i>
+                        </div>
+                        <p class="projects-card-footer-link">
+                            <a href="https://github.com/hectic238/CSCI321-FullProject" title="View on GitHub" target="_blank">View on <i class="fab fa-github"></i></a>
                         </p>
                     </div>
                 </div>
@@ -215,8 +242,11 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2 class="text-4xl font-bold">Contact</h2>
+            <h3 class="text-2xl font-bold">
+              Message me via <a href="mailto:arendunn@hotmail.com" class="underline" title="Email">Email</a> or through this Form:
+            </h3>
             <form action="https://formspree.io/f/xwpoegpr" method="POST">
                 <div class="form-group">
                     <label for="name">Name:</label>
@@ -246,8 +276,8 @@
         </div>
         <nav class="footer-nav">
           <ul class="list-none flex font-bold">
-            <li><a href="#" title="About">Projects</a></li>
-            <li><a href="contact.html" title="Contact">Contact</a></li>
+            <li><a href="#projects" title="About">Projects</a></li>
+            <li><a href="#contact" title="Contact">Contact</a></li>
           </ul>
         </nav>
       </footer>

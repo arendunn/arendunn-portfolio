@@ -138,6 +138,7 @@
 .projects-card:hover {
     transform: scale(1.02);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: default;
 }
 
 .projects-card p {
@@ -261,6 +262,11 @@
     color: var(--color1);
     padding: 30px 20%;
     padding-top: 150px;
+}
+
+.contact h3 {
+    color: var(--color1);
+    padding-bottom: 20px;
 }
 
 .contact  {
