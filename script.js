@@ -1,18 +1,21 @@
-// Check if we are on GitHub Pages
-const isGitHubPages = window.location.hostname === 'arendunn.github.io';
+document.addEventListener("DOMContentLoaded", () => {
+    const faders = document.querySelectorAll('.fade-in');
 
-// Select all anchor tags in the page
-const links = document.querySelectorAll('a');
+    const appearOptions = {
+        threshold: 0.2,  // 10% visible
+        rootMargin: "0px 0px -50px 0px"  // trigger slightly before fully visible
+    };
 
-// Loop through each link and adjust the href if on GitHub Pages
-links.forEach(link => {
-    const href = link.getAttribute('href');
-
-    // If on GitHub Pages and the link is not a full URL (doesn't start with http:// or https://)
-    if (isGitHubPages && !href.startsWith('http') && !href.startsWith('//')) {
-        // If the link is a relative path (e.g., projects.html), add '/arendunn-portfolio/' to it
-        if (!href.startsWith('/')) {
-            link.href = '/arendunn-portfolio/' + href;
+    const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        appearOnScroll.unobserve(entry.target); // animate once only
         }
-    }
+    });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+    });
 });

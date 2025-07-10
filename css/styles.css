@@ -13,17 +13,6 @@ html, body {
     overflow-x: hidden;
 }
 
-/*Stack Nav Bar on Smaller Screens*/
-@media (max-width: 360px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 1em 0; /* Add some space between items */
-    }
-}
 
 /*Nav Bar*/
 header {
@@ -50,23 +39,9 @@ li {
     margin-left: 15px;
 }
 
-/* Hero Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Hero Section */
 .hero {
     color: var(--color1);
-    opacity: 0;
-    animation: fadeIn 2s ease-out forwards;
 }
 
 .hero h1 {
