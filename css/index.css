@@ -13,37 +13,31 @@
 /* Hero Section */
 .hero {
     color: var(--color1);
-    padding: 80px 10%;
+    padding: 60px 20%;
+    padding-bottom: 1000px;
     opacity: 0;
     animation: fadeIn 2s forwards;
     height: 90vh;
-    margin-bottom: 40vh;
 }
 
-.hero .hero-text div {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(7, 1fr);
-    margin-top: 10px;
-    height: 50px;
-    font-size: 30px;
-    margin-bottom: 10px;
+.hero h1 {
+    color: var(--color1);
+    font-size: 500%;
+    padding: 0;
 }
 
 .hero h2 {
-    font-size: 10vw;
-    padding-bottom: 6px;
+    font-size: 2vw;
+    padding: 0;
 }
 
 .hero > div {
-    font-size: 4vw;
+    font-size: 1.3vw;
     padding-bottom: 2px;
 }
 
 .hero-socials {
-    font-size: 7vw;
+    font-size: 40px;
 }
 
 .hero-socials a {
@@ -55,9 +49,9 @@
 }
 
 .hero button, .resume-button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
@@ -76,14 +70,17 @@
 
 
 /* Projects Section */
+.projects {
+    color: var(--color1);
+    animation: fadeIn 2s forwards;
+}
 .projects h2 {
     color: var(--color1);
-    padding: 30px 20%;
-    font-size: 250%;
+    padding: 20px 20%;
 }
 
 .projects-grid {
-    padding: 0% 10%;
+    padding: 10px 10%;
     display: grid;
     gap: 20px;
 }
@@ -191,12 +188,12 @@
 /* Skills Section */
 .skills-section {
     padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 .skills-section h2 {
     color: var(--color1);
-    padding: 30px 20%;
-    font-size: 250%;
+    padding: 20px 20%;
 }
 
 .logos-slide span {
@@ -260,18 +257,14 @@
 /* Contact Section */
 .contact h2 {
     color: var(--color1);
-    padding: 30px 20%;
-    padding-top: 150px;
+    padding: 20px 20%;
 }
 
 .contact h3 {
     color: var(--color1);
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 20px;
-}
-
-.contact  {
-    padding: 0% 30%;
-    margin-bottom: 90px;
 }
 
 .contact form {
@@ -281,6 +274,8 @@
     flex-direction: column;
     gap: 20px;
     padding: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -325,18 +320,20 @@
 }
 
 /* Responsive Design */
-@media (max-width: 968px) {
+@media (max-width: 620px) {
     .hero h2 {
-        font-size: 60px;
+        font-size: 36px;
     }
+    .hero h3 {
+        font-size: 15px;
+        padding: 10% 0px;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr !important;
     }
     .projects-card:last-of-type {
         grid-column: 1 / -1;
-    }
-    .contact {
-        padding: 0% 10% !important;
     }
     .contact form label {
         font-size: 15px;
@@ -345,35 +342,10 @@
         font-size: 15px;
         padding: 5px;
     }
-}
-
-@media (min-width: 830px) {
     .hero > div {
-        font-size: 27px;
-    }
-    .hero-socials {
-        font-size: 50px;
-        padding-top: 10px;
-    }
-    .hero {
-        padding: 30px 10%;
-    }
-    .hero h2 {
-        font-size: 70px;
+        font-size: 15px;
     }
     .projects-card p {
         font-size: 20px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .skills-section img {
-        height: 20px;
-    }
-    .skills-section span {
-        font-size: 17px;
-    }
-    .projects-card p {
-        font-size: 15px;
     }
 }

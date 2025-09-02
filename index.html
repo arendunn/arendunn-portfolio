@@ -26,9 +26,19 @@
 
         <script src="script.js"></script>
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y535H2FP9X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y535H2FP9X');
+    </script>
     <body>
+        <!-- Navbar -->
         <header class="flex justify-between">
-            <a class="text-3xl font-bold" href="index.html" title="Home">AD.</a>
+            <a class="text-3xl font-bold" href="/" title="Home">AD.</a>
             <nav class="list-none flex font-bold">
                 <li><a href="#projects" title="About">Projects</a></li>
                 <li><a href="#contact" title="Contact">Contact</a></li>
@@ -37,27 +47,13 @@
 
         <!-- Hero Section -->
         <section class="hero">
-            <h2 class="text-8xl font-bold">AREN DUNN</h2>
-            <div class="grid grid-cols-[auto_1fr] items-center gap-2 text-2xl pt-10"> 
-                <i class="row-start-1  fas fa-map-marker-alt w-10 "></i>
-                <span class="row-start-1 col-start-2">Sydney, Australia</span>
-                <i class="row-start-2  fas fa-book w-10"></i>
-                <span class="row-start-2 col-start-2 leading-tight">Bachelor of Computer Science, Software Engineering and Big Data and Artificial Intelligence</span>
-                <i class="row-start-3  fas fa-code w-10"></i>
-                <span class="row-start-3 col-start-2 leading-tight">Web Developer, exploring Full-Stack Development and Data Science</span>
-                <i class="row-start-4  fas fa-laptop w-10"></i>
-                <span class="row-start-4 col-start-2 leading-tight">Creator of High-Quality Websites, Intelligent Solutions & Powerful Software</span>
-                <i class="row-start-5  fas fa-line-chart w-10"></i>
-                <span class="row-start-5 col-start-2 leading-tight">Building <a href="https://apexnet.netlify.app" title="ApexNet" target="_blank">ApexNet</a>, a Web Services & Digital Development Business</span>
+            <h1 class="font-bold">AREN DUNN</h1>
+            <h2><b>Web Developer</b> | Growing into Full-Stack & AI Development</h2>
+            <div class="grid items-center text-2xl gap-2 pt-10"> 
+                <span><i class="row-start-1  fas fa-map-marker-alt w-10 "></i>Sydney, Australia</span>
+                <span><i class="row-start-2  fas fa-book w-10"></i> Bachelor of Computer Science, Software Engineering and Big Data and Artificial Intelligence</span>
+                <span><i class="row-start-3  fas fa-code w-10"></i> Building <a href="https://apexnet.netlify.app" title="ApexNet" target="_blank"><u>ApexNet</u></a>, a Web Services & Digital Development Business</span>
             </div>
-            <!--
-            <h3 class="text-2xl pt-10">
-                I am an aspiring Full-Stack Developer from Sydney, Australia. Completing a Bachelor of Computer Science with 
-                two majors: Big Data and Artificial Intelligence & Software Engineering. Focus on becoming a creator of High-Quality Websites,
-                Intelligent Solutions & Powerful Software. I am the founder and CEO of <a href="#" title="ApexNet">ApexNet</a>, 
-                a web development company that I am currently building to allow me to utilise my skills in developing amazing, real-word projects.
-            </h3>
-            -->
             <div class="flex flex-col items-center pt-10">
                 <div class="hero-socials">
                         <a href="https://github.com/arendunn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
@@ -65,7 +61,7 @@
                 </div>
                 <div class="flex flex-row items-center gap-2">
                     <button onclick="scrollToProjects()">View My Projects</button>
-                    <a href="assets/ARENDUNN_RESUME.pdf" download="ARENDUNN_RESUME" class="resume-button">Download My Resume</a>
+                    <a href="assets/ARENDUNN_RESUME.pdf" download="ARENDUNN_RESUME" class="resume-button"> Download My Resume</a>
                 </div>
             </div>
         </section>
@@ -79,7 +75,7 @@
 
         <!-- Projects Section -->
         <section id="projects" class="fade-in projects">
-            <h2 class="text-4xl font-bold">Projects</h2>
+            <h2 class="text-5xl font-bold">PROJECTS</h2>
             <div class="projects-grid">
                 <div class="projects-card">
                     <div>
@@ -215,7 +211,7 @@
         </section>
 
         <section class="fade-in skills-section">
-            <h2 class="text-4xl font-bold">Skills</h2>
+            <h2 class="text-5xl font-bold">SKILLS</h2>
             <p class="text-1xl">
                 <div class="skills">
                     <span><img src="assets/html.png"><span class="skill-text">HTML</span></span>
@@ -245,7 +241,7 @@
 
         <!-- Contact Section -->
         <section id="contact" class="fade-in contact">
-            <h2 class="text-4xl font-bold">Contact</h2>
+            <h2 class="text-5xl font-bold">CONTACT</h2>
             <h3 class="text-2xl font-bold">
               Message me via <a href="mailto:arendunn@hotmail.com" class="underline" title="Email">Email</a> or through this Form:
             </h3>

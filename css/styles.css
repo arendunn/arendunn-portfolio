@@ -16,7 +16,7 @@ html, body {
 
 /*Nav Bar*/
 header {
-    color: var(--color5);
+    color: var(--color2);
     align-items: center;
     margin: 2%;
     box-sizing: border-box;
@@ -40,12 +40,8 @@ li {
 }
 
 /* Hero Section */
-.hero {
-    color: var(--color1);
-}
-
 .hero h1 {
-    color: var(--color1);
+    color: var(--color5);
     padding: 30px 20%;
 }
 
