@@ -13,8 +13,9 @@
 /* Hero Section */
 .hero {
     color: var(--color1);
-    padding: 60px 20%;
-    padding-bottom: 1000px;
+    padding: 30px 20%;
+    padding-top: clamp(70px, 5vw, 50px);
+    padding-bottom: 50rem;
     opacity: 0;
     animation: fadeIn 2s forwards;
     height: 90vh;
@@ -22,22 +23,22 @@
 
 .hero h1 {
     color: var(--color1);
-    font-size: 500%;
+    font-size: clamp(2.4rem, 5vw, 5rem);
     padding: 0;
 }
 
 .hero h2 {
-    font-size: 2vw;
+    font-size: clamp(1.25rem, 3vw, 2rem);
     padding: 0;
 }
 
 .hero > div {
-    font-size: 1.3vw;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     padding-bottom: 2px;
 }
 
 .hero-socials {
-    font-size: 40px;
+    font-size: clamp(30px, 2vw, 50px);
 }
 
 .hero-socials a {
@@ -51,7 +52,7 @@
 .hero button, .resume-button {
     padding: 5px 10px;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: clamp(10px, 2vw, 20px);
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
@@ -140,7 +141,7 @@
 
 .projects-card p {
     gap: 10px;
-    font-size: 20px;
+    font-size: clamp(0.75rem, 3vw, 1rem);
 }
 
 .projects-card-footer {
@@ -221,7 +222,7 @@
 }
 
 .skills img {
-    height: 40px;
+    height: clamp(20px, 2vw, 40px);
 }
 
 .skills > span {
@@ -236,7 +237,7 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: clamp(10px, 2vw, 20px);
     font-weight: 600;
 }
 
@@ -274,8 +275,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 40px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10% 10% 10%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -320,32 +320,11 @@
 }
 
 /* Responsive Design */
-@media (max-width: 620px) {
-    .hero h2 {
-        font-size: 36px;
-    }
-    .hero h3 {
-        font-size: 15px;
-        padding: 10% 0px;
-    }
-
+@media (max-width: 1140px) {
     .projects-grid {
         grid-template-columns: 1fr !important;
     }
     .projects-card:last-of-type {
         grid-column: 1 / -1;
-    }
-    .contact form label {
-        font-size: 15px;
-    }
-    .contact form input {
-        font-size: 15px;
-        padding: 5px;
-    }
-    .hero > div {
-        font-size: 15px;
-    }
-    .projects-card p {
-        font-size: 20px;
     }
 }
