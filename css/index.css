@@ -23,8 +23,9 @@
 
 .hero h1 {
     color: var(--color1);
-    font-size: clamp(2.4rem, 5vw, 5rem);
+    font-size: clamp(2.5rem, 6vw, 5rem);
     padding: 0;
+    margin: 0;
 }
 
 .hero h2 {
@@ -33,7 +34,7 @@
 }
 
 .hero > div {
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     padding-bottom: 2px;
 }
 
@@ -75,15 +76,18 @@
     color: var(--color1);
     animation: fadeIn 2s forwards;
 }
+
 .projects h2 {
     color: var(--color1);
     padding: 20px 20%;
+    font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .projects-grid {
     padding: 10px 10%;
     display: grid;
     gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .projects-card {
@@ -91,6 +95,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -100,26 +105,23 @@
     margin-bottom: 20px;
 }
 
-.projects-card-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width: 100%;
-    height: 80px;
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 10px;
+.projects-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: default;
 }
 
-.projects-card-header img {
-    width: 200px;
+.projects-card img {
+    height: 30px;
+}
+
+.projects-card .logo {
+    height: 50px;
 }
 
 .projects-card a {
     margin-top: 10px;
-    width: 30%;
+    width: 20%;
     text-align: center;
     background-color: var(--color4);
     padding: 7px;
@@ -133,40 +135,31 @@
     color: var(--color5);
 }
 
-.projects-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    cursor: default;
-}
-
 .projects-card p {
     gap: 10px;
     font-size: clamp(0.75rem, 3vw, 1rem);
 }
 
-.projects-card-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.projects-card-footer i {
+.projects-card-logos i {
     font-size: 30px;
 }
 
-.projects-card-footer .fa-github {
+.projects-card-logos .fa-github {
     font-size: 20px;
 }
 
-.projects-card-footer .icon {
-    height: 30px
+.projects-card-logos .icon {
+    height: 40px
 }
 
-.projects-card-footer-link {
+.projects-card-links {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
+    flex-direction: row;
+}
+
+.projects-card-links a {
+    width: 100%;
 }
 
 .view-more {
@@ -195,6 +188,7 @@
 .skills-section h2 {
     color: var(--color1);
     padding: 20px 20%;
+    font-size: clamp(1.75rem, 5vw, 4rem);
 }
 
 .logos-slide span {
@@ -259,6 +253,7 @@
 .contact h2 {
     color: var(--color1);
     padding: 20px 20%;
+    font-size: clamp(1.75rem, 5vw, 4rem);
 }
 
 .contact h3 {
@@ -320,7 +315,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1140px) {
+@media (max-width: 960px) {
     .projects-grid {
         grid-template-columns: 1fr !important;
     }
